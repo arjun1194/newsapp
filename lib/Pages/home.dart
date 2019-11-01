@@ -13,12 +13,13 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Repository repository = Repository();
   Future currentNewsFuture;
-  int currentPage = 0;
+  int currentPage = 1;
   int MaxPage = 10;
 
   @override
   void initState() {
     super.initState();
+    currentNewsFuture =    repository.fetchNewsWithCurrentLocationWithPage(currentPage);
     setState(() {
       print(currentPage);
 
@@ -82,6 +83,9 @@ class HomeBuilder extends StatefulWidget {
 }
 
 class _HomeBuilderState extends State<HomeBuilder> {
+  seeMore(context){
+
+  }
   @override
   Widget build(BuildContext context) {
     return ListView(children:homebuilder(widget.leftButtonPressed, widget.rightButtonPressed, widget.currentPage, widget.news));

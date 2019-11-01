@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-
-
 class NavigationButtons extends StatefulWidget {
   VoidCallback leftButtonPressed;
   int currentPage;
   VoidCallback rightButtonPressed;
 
-  NavigationButtons({Key key,@required this.leftButtonPressed,@required this.currentPage,
+  NavigationButtons(
+      {Key key,
+      @required this.leftButtonPressed,
+      @required this.currentPage,
       @required this.rightButtonPressed});
 
   @override
@@ -38,6 +39,7 @@ class _NavigationButtonsState extends State<NavigationButtons> {
           },
         ),
       ],
-    );;
+    );
+    ;
   }
 }

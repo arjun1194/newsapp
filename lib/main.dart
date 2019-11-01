@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/Pages/home.dart';
+import 'package:newsapp/routes/routes.dart';
 
 import 'Components/app_bar.dart';
 
 void main() => runApp(MaterialApp(
-      home: MyHome(),
-    ));
+debugShowCheckedModeBanner: false,
+title: 'Application 1',
+routes: routes,),);
 
 class MyHome extends StatefulWidget {
   @override

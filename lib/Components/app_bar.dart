@@ -6,9 +6,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text('News app'),
       actions: <Widget>[
-        IconButton(icon: Icon(Icons.search),onPressed: (){},),
-        IconButton(icon: Icon(Icons.tune),onPressed: (){},),
-
+        IconButton(
+          icon: Icon(Icons.search),
+          onPressed: () {},
+        ),
+        IconButton(
+          icon: Icon(Icons.tune),
+          onPressed: () {},
+        ),
       ],
     );
   }
