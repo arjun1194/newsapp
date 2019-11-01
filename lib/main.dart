@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/Pages/home.dart';
+
+import 'Components/app_bar.dart';
 
 void main() => runApp(MaterialApp(
       home: MyHome(),
@@ -13,11 +16,8 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-        title: Text('News App')
-      ),
-      body:Center(child: Text('hello'),),
+      appBar: CustomAppBar(),
+      body:Center(child: Home(),),
     );
   }
 }
