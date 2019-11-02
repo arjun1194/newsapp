@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),
-          onPressed: () {},
+          onPressed: () {Navigator.of(context).pushNamed('/search');},
         ),
         IconButton(
           icon: Icon(Icons.tune),
